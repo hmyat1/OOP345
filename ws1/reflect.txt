@@ -1,0 +1,6 @@
+In this workshop, i have implemented the concept of Linkage from last week's reading.In my code, external linkage has been demonstrated by the "g_sysClock" global variable, which is declared with the "extern" keyword in the header file and defined in the main file. It allows the variable to be accessed through various translation units. 
+Moreover,in this workshop, i have to use header guards,which use #ifndef, #define, and #endif, ensure that a header file is only included once in a translation unit, to avoid duplication problems.
+Also, i have used a static variable "static int INFO = 1;".It uses its value across function calls, which allows me to count the number of times the function has been called.
+In addition, we are asked to write the prototype for the main function to accept command line "int main(int argc, char* argv[])" so that we can pass arguments to the program when it runs on.
+In Part 2 of the workshop, I modified the Event class to accept descriptions of any length. This required changing the class to dynamically handle C-style null-terminated strings. To prevent memory leaks, I used new and delete[] properly.
+In conclusion of this workshop, i have learnt the implementations of the concepts from reading list about header guards, Linkage, static variable and command line arguments.
