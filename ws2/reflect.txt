@@ -1,0 +1,17 @@
+//Name : Hla Myint Myat
+//Email: hmyat1@myseneca.ca
+//ID : 185923216
+//DATE : 27.1.24
+
+// I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments. This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+In this workshop,I have learned the difference  performance between copy and move operations, particularly when working with huge arrays.
+
+For example, the overhead required in copying large quantities of memory whereas, move operations basically transfer ownership of resources, resulting in faster execution.
+
+In the StringSet.cpp code, the StringSet constructor reads the input file (gutenberg_shakespeare) and populates the dynamic array with its data. To reduce the overhead of reading the file several times, a caching method would include saving the file contents in memory after it had been read. Following that StringSet objects might then use the cached data instead of accessing the file again, improving efficiency by reducing duplicate I/O operations.
+
+One more point in this workshop is the main difference between std::chrono::steady_clock and std::chrono::system_clock 
+
+* steady_clock - used when measuring intervals or durations.
+* system_clock - used when dealing with absolute time points. 
