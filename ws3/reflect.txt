@@ -1,0 +1,14 @@
+//Name : Hla Myint Myat
+//Email: hmyat1@myseneca.ca
+//ID : 185923216
+//DATE : 2.2.24
+
+// I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments. This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+In this workshop, I have experienced the most specialized template class when instantiating new objects of the template class. This makes sure that the template class dynamically adjusts to meet the requirements.
+
+Additionally, I have implemented two operator overloads in my code within the Pair class. Firstly, I overloaded the operator<< function as a friend function to facilitate the printing of Pair objects to an output stream. This allows for easy visualization of Pair objects' contents, enhancing code readability and debugging capabilities. Secondly, I overloaded the operator== function to enable comparison of two Pair objects based on their keys. By doing so, I provided a means to check for key equality between Pair instances, which is useful for various comparison operations.
+
+Furthermore, in the Pair.h file, I defined a default constructor Pair() that initializes member variables to an empty string. This ensures consistency and avoids uninitialized data issues. Moreover, I utilized uniform initialization to set member variables to specific values, such as "[No Key]" and "[No Value]". This approach enhances code clarity and ensures that object initialization follows a standardized pattern.
+
+
