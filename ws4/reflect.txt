@@ -1,0 +1,19 @@
+//Name : Hla Myint Myat
+//Email: hmyat1@myseneca.ca
+//ID : 185923216
+//DATE : 10.2.24
+
+// I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments. This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+
+In the workshop, I learned how to use objects from one class inside another class.There were two classes, Child and ConfirmOrder, both with toy objects inside. But they handled memory differently.Both the Child and ConfirmOrder classes had variables that pointed to objects of the Toy class. But I had trouble managing memory properly, which caused memory leaks.
+
+
+In ConfirmOrder, when copying objects, it just copied the pointers. This caused problems because changes in one object affected others. ConfirmOrder didn't handle memory well for the toys.
+
+On the other hand, Child created new toy objects when copying, taking care of memory properly. It was responsible for managing toy memory.
+
+I also identified instances where association, aggregation, and composition relationships were applied in my code. In this workshop, Child and Toy represent a composition relationship, ConfirmOrder and Toy represent aggregation, while ConfirmOrder and its array of pointers represent association. 
+
+The tricky part was when I tried to add toys in ConfirmOrder using '+='. Initially, I made a mistake by checking for duplicates after allocating memory. 
+In the ConfirmOrder class, the operator+= function is responsible for adding toys to the array of pointers. Initially, there was a misplaced duplicate check that led to memory leaks. This led to memory leaks. Fixing the order of operations and checking for duplicates before allocating memory helped solve the issue. 
